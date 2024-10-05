@@ -19,21 +19,12 @@
   width: 48px;
 }
 
-.languages ul li a img {
-  height: 18px;
-  width: 18px;
-}
-
 .languages ul li a:hover {
   color: #FEAB00 !important;
 }
 
 .food-type {
   color: #559440;
-}
-
-#menu-str {
-  /*color: #FEAB00;*/
 }
 
 #menu-str #menu-head tr td {
