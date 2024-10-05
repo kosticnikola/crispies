@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/logo.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -35,15 +35,15 @@
   <div id="topbar" class="d-flex align-items-center fixed-top">
     <div class="container d-flex justify-content-center justify-content-md-between">
 
-      <div class="contact-info d-flex align-items-center">
+      <div class="contact-info col-6 d-flex align-items-center">
         <i class="bi bi-phone d-flex align-items-center"><span>+381 60 123 4567</span></i>
-        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sun: 07:30AM - 11:30PM</span></i>
+<!--        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sun: 07:30AM - 11:30PM</span></i>-->
       </div>
 
-      <div class="languages d-md-flex align-items-center">
+      <div class="languages col-6 d-flex justify-content-end align-items-center">
         <ul>
-          <li><a href="#" onclick="setLanguage('en')">EN</a></li>
-          <li><a href="#" onclick="setLanguage('rs')">RS</a></li>
+          <li><a href="#" onclick="setLanguage('rs')"><img src="assets/img/rs-flag.png" alt="RS"></a></li>
+          <li><a href="#" onclick="setLanguage('en')"><img src="assets/img/uk-flag.png" alt="EN"></a></li>
         </ul>
       </div>
     </div>
@@ -53,17 +53,15 @@
   <header id="header" class="fixed-top d-flex align-items-cente">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-      <!-- <h1 class="logo me-auto me-lg-0"><a href="index.html">CRISPIES</a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#menu">Menu</a></li>
-          <!-- <li><a class="nav-link scrollto" href="#specials">Weekly specials</a></li> -->
-          <li><a class="nav-link scrollto" href="#location">Location</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto active" href="#hero" data-i18n="navHome">Početna</a></li>
+          <li><a class="nav-link scrollto" href="#menu" data-i18n="navMenu">Meni</a></li>
+           <li><a class="nav-link scrollto" href="#deals" data-i18n="navDeals">Akcije</a></li>
+          <li><a class="nav-link scrollto" href="#location" data-i18n="navLocation">Lokacija</a></li>
+          <li><a class="nav-link scrollto" href="#contact" data-i18n="navContact">Kontakt</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -76,12 +74,12 @@
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
-          <h1>Welcome to <span>CRISPIES</span></h1>
-          <h2>The only fast food in the city of Niš offering a <span>FREE drink</span> with a meal, an innovative menu based on potatoes, with a special focus on vegan and gluten-free products.</h2>
+          <h1 data-i18n="heroWelcome">Dobrodošli u <span>CRISPIES</span></h1>
+          <h2 data-i18n="heroUsp">Jedina brza hrana u Nišu koja nudi <span>BESPLATNO piće</span> uz obrok, inovativan meni baziran na krompirima, sa specijalnim fokusom na veganske i gluten-free proizvode.</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Our Menu</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Order & Pick up</a>
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto" data-i18n="heroMenuBtn">Naš Meni</a>
+            <a href="tel:+381601234567" class="btn-book animated fadeInUp scrollto" data-i18n="heroOrderBtn">Naruči & Pokupi</a>
           </div>
         </div>  
 
@@ -96,91 +94,55 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Menu</h2>
-          <p data-i18n="menuHeader"></p>
-          <p id="menu-explain">
-            Create your BUCKET by picking one item or mixing two from the same or different menus. <br />
-            With each BUCKET, you get a FREE drink.
+          <h2 data-i18n="navMenu">Meni</h2>
+          <p data-i18n="menuHeader">Pogledajte Naš Meni</p>
+          <p id="menu-explain" data-i18n="menuExplain">
+            Napravite svoju KOFICU tako što ćete izabrati jedan proizvod ili kombinovati dva iz istog ili različitih menija.<br />
+            Uz svaku KOFICU, dobija se BESPLATNO piće.
           </p>
           <div id="menu-offer">
 
             <table id="menu-str" class="table table-dark">
               <thead id="menu-head">
                <tr>
-                 <td>Menu Type</td>
-                 <td>M Bucket</td>
-                 <td>L bucket</td>
+                 <td data-i18n="menuStrHeadMenuType">Tip Menija</td>
+                 <td data-i18n="menuStrHeadMenuM">M Kofica</td>
+                 <td data-i18n="menuStrHeadMenuL">L Kofica</td>
                </tr>
               </thead>
               <tbody>
               <tr>
-                <td>Menu 1</td>
+                <td data-i18n="menuStrMenu1">Meni 1</td>
                 <td>RSD 240</td>
                 <td>RSD 360</td>
               </tr>
               <tr>
-                <td>Menu 2</td>
+                <td data-i18n="menuStrMenu2">Meni 2</td>
                 <td>RSD 240</td>
                 <td>RSD 360</td>
               </tr>
               <tr>
-                <td>Menu 3</td>
+                <td data-i18n="menuStrMenu3">Meni 3</td>
                 <td>RSD 240</td>
                 <td>RSD 360</td>
               </tr>
               <tr>
-                <td>Menu 1 & 2</td>
+                <td data-i18n="menuStrMenu12">Meni 1 & 2</td>
                 <td>RSD 240</td>
                 <td>RSD 360</td>
               </tr>
               <tr>
-                <td>Menu 1 & 3</td>
+                <td data-i18n="menuStrMenu13">Meni 1 & 3</td>
                 <td>RSD 240</td>
                 <td>RSD 360</td>
               </tr>
               <tr>
-                <td>Menu 2 & 3</td>
+                <td data-i18n="menuStrMenu23">Meni 2 & 3</td>
                 <td>RSD 240</td>
                 <td>RSD 360</td>
               </tr>
               </tbody>
             </table>
-
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu Type</li>-->
-<!--              <li class="list-group-item">M bucket</li>-->
-<!--              <li class="list-group-item">L bucket</li>-->
-<!--            </ul>-->
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu 1</li>-->
-<!--              <li class="list-group-item">$4.95</li>-->
-<!--              <li class="list-group-item">$4.95</li>-->
-<!--            </ul>-->
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu 2</li>-->
-<!--              <li class="list-group-item">$6.95</li>-->
-<!--              <li class="list-group-item">$6.95</li>-->
-<!--            </ul>-->
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu 3</li>-->
-<!--              <li class="list-group-item">$8.95</li>-->
-<!--              <li class="list-group-item">$8.95</li>-->
-<!--            </ul>-->
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu 1 & 2</li>-->
-<!--              <li class="list-group-item">$5.95</li>-->
-<!--              <li class="list-group-item">$5.95</li>-->
-<!--            </ul>-->
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu 1 & 3</li>-->
-<!--              <li class="list-group-item">$6.95</li>-->
-<!--              <li class="list-group-item">$6.95</li>-->
-<!--            </ul>-->
-<!--            <ul class="list-group list-group-horizontal">-->
-<!--              <li class="list-group-item">Menu 2 & 3</li>-->
-<!--              <li class="list-group-item">$7.95</li>-->
-<!--              <li class="list-group-item">$7.95</li>-->
-<!--            </ul>-->
           </div>
 
         </div>
@@ -188,12 +150,12 @@
         <div class="row" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-menu1">Menu 1</li>
-              <li data-filter=".filter-menu2">Menu 2</li>
-              <li data-filter=".filter-menu3">Menu 3</li>
-              <li data-filter=".filter-dippots">Dip pots</li>
-              <li data-filter=".filter-drinks">Drinks</li>
+              <li data-filter="*" class="filter-active" data-i18n="menuFilterAll">Svi proizvodi</li>
+              <li data-filter=".filter-menu1" data-i18n="menuStrMenu1">Meni 1</li>
+              <li data-filter=".filter-menu2" data-i18n="menuStrMenu2">Meni 2</li>
+              <li data-filter=".filter-menu3" data-i18n="menuStrMenu3">Meni 3</li>
+              <li data-filter=".filter-dippots" data-i18n="menuFilterDippots">Sosevi</li>
+              <li data-filter=".filter-drinks" data-i18n="menuFilterDrinks">Pića</li>
             </ul>
           </div>
         </div>
@@ -341,13 +303,13 @@
       </div>
     </section><!-- End Menu Section -->
 
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
+    <!-- ======= deals Section ======= -->
+    <section id="deals" class="specials">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Specials</h2>
-          <p>Our Monthly Deals</p>
+          <h2 data-i18n="navDeals">Akcije</h2>
+          <p data-i18n="ourMonthlyDeals">Naše ovomesečne akcije</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -431,15 +393,15 @@
         </div>
 
       </div>
-    </section><!-- End Specials Section -->
+    </section><!-- End Deals Section -->
 
 <!-- ======= Location Section ======= -->
     <section id="location" class="contact">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Location</h2>
-          <p>Find Us</p>
+          <h2 data-i18n="navLocation">Lokacija</h2>
+          <p data-i18n="findUs">Pronađi Nas</p>
         </div>
       </div>
 
@@ -453,8 +415,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Contact</h2>
-          <p>Contact Us</p>
+          <h2 data-i18n="navContact">Kontakt</h2>
+          <p data-i18n="contactUs">Kontaktiraj Nas</p>
         </div>
       </div>
 
@@ -466,8 +428,8 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Vožda Karađorđa 72, Niš 18000, Serbia</p>
+                <h4 data-i18n="navLocation">Lokacija:</h4>
+                <p>Vožda Karađorđa 70, Niš 18000, Srbija</p>
               </div>
 
               <div class="open-hours">
@@ -497,7 +459,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="mailto:info@crispiesfood.com" method="get" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -510,7 +472,7 @@
                 <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="8" placeholder="Message" required></textarea>
+                <textarea class="form-control" name="body" rows="8" placeholder="Message" required></textarea>
               </div>
               <div class="my-3">
                 <div class="loading">Loading</div>
@@ -535,52 +497,52 @@
       <div class="container">
         <div class="row">
 
-          <div class="col-lg-3 col-md-6">
+          <div class="d-flex text-center justify-content-center">
             <div class="footer-info">
               <h3>CRISPIES</h3>
               <p>
-              Vožda Karađorđa 72, Niš 18000, Serbia<br><br>
+              Vožda Karađorđa 70, Niš 18000, Serbia<br><br>
                 <strong>Phone:</strong> +381 60 123 4567<br>
                 <strong>Email:</strong> info@crispiesfood.com<br>
               </p>
               <div class="social-links mt-3">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://wa.me/381601234567" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://www.instagram.com/crispiesfood/" class="google"><i class="bx bxl-google"></i></a>
+<!--                <a href="https://www.instagram.com/crispiesfood/" class="google"><i class="bx bxl-"></i></a>-->
+<!--                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
+                <a href="https://www.instagram.com/crispiesfood/" class="instagram"><i class="bx bxl-instagram"></i></a>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Rate us!</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
+<!--          <div class="col-lg-2 col-md-6 footer-links">-->
+<!--            <h4>Rate us!</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
 
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
+<!--          <div class="col-lg-3 col-md-6 footer-links">-->
+<!--            <h4>Our Services</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Stay informed about the best deals!</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
+<!--          <div class="col-lg-4 col-md-6 footer-newsletter">-->
+<!--            <h4>Our Newsletter</h4>-->
+<!--            <p>Stay informed about the best deals!</p>-->
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
 
           </div>
 
@@ -612,13 +574,64 @@
   <script>
     const translations = {
       en: {
-        menuHeader: "Check Our Tasty Menu",
+        heroWelcome: "Welcome to <span>CRISPIES</span>",
+        heroUsp: "The only fast food in the city of Niš offering a <span>FREE drink</span> with a meal, an innovative menu based on potatoes, with a special focus on vegan and gluten-free products.",
+        heroMenuBtn: "Our Menu",
+        heroOrderBtn: "Order & Pick Up",
+        navHome: "Home",
+        navMenu: "Menu",
+        navDeals: "Deals",
+        navLocation: "Location",
+        navContact: "Contact",
+        menuKeyword: "Menu",
+        menuHeader: "Check Our Menu",
+        menuExplain: "Create your BUCKET by picking one item or mixing two from the same or different menus.<br />With each BUCKET, you get a FREE drink.",
+        menuStrHeadMenuType: "Menu Type",
+        menuStrHeadMenuM: "M Bucket",
+        menuStrHeadMenuL: "L Bucket",
+        menuStrMenu1: "Menu 1",
+        menuStrMenu2: "Menu 2",
+        menuStrMenu3: "Menu 3",
+        menuStrMenu12: "Menu 1 & 2",
+        menuStrMenu13: "Menu 1 & 3",
+        menuStrMenu23: "Menu 2 & 3",
+        menuFilterAll: "All products",
+        menuFilterDippots: "Dip pots",
+        menuFilterDrinks: "Drinks",
+        ourMonthlyDeals: "Our Monthly Deals",
+        contactUs: "Contact Us",
+        findUs: "Find Us",
         about: "About Us",
         contact: "Contact",
         description: "This is a description of the service."
       },
       rs: {
-        menuHeader: "Cekiraj nas ukusan meni",
+        heroWelcome: "Dobrodošli u <span>CRISPIES</span>",
+        heroUsp: "Jedina brza hrana u Nišu koja nudi <span>BESPLATNO piće</span> uz obrok, inovativan meni baziran na krompirima, sa specijalnim fokusom na veganske i gluten-free proizvode.",
+        heroMenuBtn: "Naš Meni",
+        heroOrderBtn: "Naruči & Pokupi",
+        navHome: "Početna",
+        navMenu: "Meni",
+        navDeals: "Akcije",
+        navLocation: "Lokacija",
+        navContact: "Kontakt",
+        menuHeader: "Meni",
+        menuExplain: "Napravite svoju KOFICU tako što ćete izabrati jedan proizvod ili kombinovati dva iz istog ili različitih menija.<br />Uz svaku KOFICU, dobija se BESPLATNO piće.",
+        menuStrHeadMenuType: "Tip Menija",
+        menuStrHeadMenuM: "M Kofica",
+        menuStrHeadMenuL: "L Kofica",
+        menuStrMenu1: "Meni 1",
+        menuStrMenu2: "Meni 2",
+        menuStrMenu3: "Meni 3",
+        menuStrMenu12: "Meni 1 & 2",
+        menuStrMenu13: "Meni 1 & 3",
+        menuStrMenu23: "Meni 2 & 3",
+        menuFilterAll: "Svi proizvodi",
+        menuFilterDippots: "Sosevi",
+        menuFilterDrinks: "Pića",
+        ourMonthlyDeals: "Naše ovomesečne akcije",
+        contactUs: "Kontaktiraj Nas",
+        findUs: "Pronađi Nas",
         about: "À propos de nous",
         contact: "Contact",
         description: "Ceci est une description du service."
@@ -626,22 +639,30 @@
     };
 
     function setLanguage(lang) {
-      localStorage.setItem('lang', lang);
       loadTranslations(lang);
+      highlightActiveLanguage(lang);
     }
 
     function loadTranslations(lang) {
       const translation = translations[lang];
       document.querySelectorAll('[data-i18n]').forEach(function(el) {
         const key = el.getAttribute('data-i18n');
-        el.innerText = translation[key];
+        el.innerHTML = translation[key];
       });
     }
 
-    document.addEventListener('DOMContentLoaded', function() {
-      const lang = localStorage.getItem('lang') || 'en';  // Default to English
-      loadTranslations(lang);
-    });
+    function highlightActiveLanguage(lang) {
+      // Remove active class from all links
+      document.querySelectorAll('.languages a').forEach(link => {
+        link.classList.remove('active-language');
+      });
+
+      // Add active class to the currently selected language
+      const activeLink = document.querySelector(`.languages a[onclick="setLanguage('${lang}')"]`);
+      if (activeLink) {
+        activeLink.classList.add('active-language');
+      }
+    }
   </script>
 
 </body>
