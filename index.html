@@ -11,7 +11,7 @@
 
   <!-- Favicons -->
   <link href="assets/img/logo.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/logo.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -36,7 +36,7 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
 
       <div class="contact-info col-6 d-flex align-items-center">
-        <!-- <i class="bi bi-phone d-flex align-items-center"><span>+381 60 123 4567</span></i> -->
+        <i class="bi bi-phone d-flex align-items-center"><span>+381 66 8106 962</span></i>
 <!--        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Mon-Sun: 07:30AM - 11:30PM</span></i>-->
       </div>
 
@@ -55,21 +55,791 @@
 
       <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
 
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero" data-i18n="navHome">Početna</a></li>
+          <li><a class="nav-link scrollto" href="#menu" data-i18n="navMenu">Meni</a></li>
+           <!-- <li><a class="nav-link scrollto" href="#deals" data-i18n="navDeals">Akcije</a></li> -->
+          <li><a class="nav-link scrollto" href="#location" data-i18n="navLocation">Lokacija</a></li>
+          <li><a class="nav-link scrollto" href="#contact" data-i18n="navContact">Kontakt</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Under construction section ======= -->
+  <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
     <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100">
       <div class="row">
         <div class="col-lg-8">
           <h1 data-i18n="heroWelcome">Dobrodošli u <span>CRISPIES</span></h1>
-          <h2 data-i18n="heroUsp">Sajt je u izradi.</h2>
+          <h2 data-i18n="heroUsp">Jedini restoran brze hrane u Nišu koji nudi inovativan meni gde <span>sami kreirate svoj obrok</span> birajući raznovrsne opcije sa menija.</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto" data-i18n="heroMenuBtn">Naš Meni</a>
+            <a href="tel:+381601234567" class="btn-book animated fadeInUp scrollto" data-i18n="heroOrderBtn">Naruči & Pokupi</a>
+          </div>
         </div>  
 
       </div>
     </div>
-  </section><!-- End Under construction -->
+  </section><!-- End Hero -->
+
+  <!-- ======= Hero Section ======= -->
+  <!-- <section id="hero" class="d-flex align-items-center"> -->
+    <!-- <div class="container position-relative text-center text-lg-start" data-aos="zoom-in" data-aos-delay="100"> -->
+      <!-- <div class="row">
+        <div class="col-lg-8">
+          <h1 data-i18n="heroWelcome">Dobrodošli u <span>CRISPIES</span></h1>
+          <h2 data-i18n="heroUsp">Jedini restoran brze hrane u Nišu koji nudi inovativan meni gde <span>sami kreirate svoj obrok</span> birajući raznovrsne opcije sa menija.</h2>
+
+          <div class="btns">
+            <a href="#menu" class="btn-menu animated fadeInUp scrollto" data-i18n="heroMenuBtn">Naš Meni</a>
+            <a href="tel:+381601234567" class="btn-book animated fadeInUp scrollto" data-i18n="heroOrderBtn">Naruči & Pokupi</a>
+          </div>
+        </div>  
+
+      </div>
+    </div> -->
+  <!-- </section>End Hero -->
+
+  <main id="main">
+
+    <!-- ======= Menu Section ======= -->
+    <section id="menu" class="menu section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-i18n="navMenu">Meni</h2>
+          <p data-i18n="menuHeader">Pogledajte Naš Meni</p>
+          <p id="menu-explain" data-i18n="menuExplain">
+            Napravite svoju KOFICU tako što ćete izabrati 1 ili kombinovati 2 proizvoda iz MENIJA 1 i MENIJA 2.<br />
+            Izaberite soseve uz svaku koficu. (kečap, majonez, senf, burger, čili, tartar) 
+          </p>
+          <div id="menu-offer">
+
+            <table id="menu-str" class="table table-dark">
+              <thead id="menu-head">
+               <tr>
+                 <td data-i18n="menuStrHeadMenuType">Tip Menija</td>
+                 <td data-i18n="menuStrHeadMenuM">S Kofica</td>
+                 <td data-i18n="menuStrHeadMenuM">M Kofica</td>
+                 <td data-i18n="menuStrHeadMenuL">L Kofica</td>
+               </tr>
+              </thead>
+              <tbody>
+              <tr>
+                <td data-i18n="menuStrMenu1">Meni 1</td>
+                <td>RSD 130</td>
+                <td>RSD 200</td>
+                <td>RSD 290</td>
+              </tr>
+              <tr>
+                <td data-i18n="menuStrMenu2">Meni 2</td>
+                <td>RSD 330</td>
+                <td>RSD 500</td>
+                <td>RSD 720</td>
+              </tr>
+              <tr>
+                <td data-i18n="menuStrMenu12">Combo Meni 1 & 2</td>
+                <td>RSD 220</td>
+                <td>RSD 330</td>
+                <td>RSD 500</td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-flters">
+              <li data-filter="*" class="filter-active" data-i18n="menuFilterAll">Svi proizvodi</li>
+              <li data-filter=".filter-menu1" data-i18n="menuStrMenu1">Meni 1</li>
+              <li data-filter=".filter-menu2" data-i18n="menuStrMenu2">Meni 2</li>
+              <li data-filter=".filter-menu3" data-i18n="menuStrPancakes">Poh. Palačinke</li>
+              <li data-filter=".filter-dippots" data-i18n="menuFilterDippots">Sosevi</li>
+              <li data-filter=".filter-drinks" data-i18n="menuFilterDrinks">Pića</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container" data-aos="fade-up" data-aos-delay="200">
+
+          <div class="col-lg-6 menu-item filter-menu1">
+            <img src="assets/img/menu/1.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="crinkleFries">Crispies Pomfrit</a>
+            </div>
+            <div class="menu-ingredients" data-i18n="desc_crinkleFries">
+              <span data-i18n="desc_crinkleFries">Rebrasti pomfrit sa savršenom ravnotežom hrskavosti i mekanosti.</span><br />
+              <span class="food-type" data-i18n="vL">VEGANSKO, POSNO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu1">
+            <img src="assets/img/menu/2.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="chips">Old-School Čips</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_chips">Tradicionalni krompir po starim metodama od prirodnog krompira.</span><br />
+              <span class="food-type" data-i18n="vL">VEGANSKO, POSNO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu1">
+            <img src="assets/img/menu/3.jpeg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="wedges">Začinjene Kriške Krompira</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_wedges">Hrskave kriške krompira sa korom od začinskog bilja.</span><br />
+              <span class="food-type" data-i18n="vL">VEGANSKO, POSNO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu1">
+            <img src="assets/img/menu/4.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="spicyWedges">Ljuto Začinjene Kriške Krompira</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_spicyWedges">Kriške krompira sa smelom mešavinom začina i dozom ljutine.</span><br />
+              <span class="food-type" data-i18n="vL">VEGANSKO, POSNO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu1">
+            <img src="assets/img/menu/5.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="goldenBubbles">Krompir Kuglice</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_goldenBubbles">Jednostavan, čist ukus krompira u mekom, prozračnom mehuriću.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu1">
+            <img src="assets/img/menu/6.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="hashBrowns">Krompir Pljeskavice</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_hashBrowns">Rendani krompir pržen do savršene, zlatne boje.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/7.png" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="onionRings">Kolutići Luka</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_onionRings">Hrskavi zlatni kolutići luka, lagani i prženi do savršenstva.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/8.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="squidRings">Kolutići Lignje</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_squidRings">Lignja pripremljena da pruži hrskavu teksturu i ukus.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/9.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="chickenNuggets">Pileći Nuggetsi</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_chickenNuggets">Sočna pileća prsa pretvorena u zlatne zalogaje.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/10.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="scStrips">Slatko - Ljuti Pileći Prstići</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_scStrips">Pileći prstići sa slatkim i začinjenim tonovima ukusa.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/11.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="cornflakeStrips">Kornfleks Pileći Prstići</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_cornflakeStrips">Pileći prstići sa hrskavom, začinjenom kornfleks korom.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/12.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="ccBombs">Pileće Kuglice sa Sirom</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_ccBombs">Mekane pileće kuglice punjene topljenim sirom.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/13.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="cheese">Crispies Sir</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_cheese">Meki, topljeni sir umotan u zlatnu, hrskavu koru.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/14.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="brocolli">Crispies Brokoli</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_brocolli">Brokoli na nov način - hrskav, pikantan i ukusan.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu2">
+            <img src="assets/img/menu/15.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="mushrooms">Crispies Pečurke</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_mushrooms">Prave pečurke pretvorene u hrskave zalogaje.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu3">
+            <img src="assets/img/menu/16.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pCheese">Poh. Palačinka sa Sirom</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_pCheese">Hrskava kora spolja, topljeni sir iznutra.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu3">
+            <img src="assets/img/menu/17.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pCheeseHam">Poh. Palačinka sa Sirom i Šunkom</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_pCheeseHam">Hrskava kora spolja, topljeni sir i šunka iznutra.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu3">
+            <img src="assets/img/menu/18.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pPizza">Pizza Poh. Palačinka</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_pPizza">Hrskava kora spolja, pizza punjenje iznutra.</span><br />
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu3">
+            <img src="assets/img/menu/19.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pChoco">Čoko Poh. Palačinka</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_pChoco">Hrskava kora spolja, čokoladno punjenje iznutra.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu3">
+            <img src="assets/img/menu/20.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pStrawberry">Jagoda - Vanila Poh. Palačinka</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_pStrawberry">Hrskava kora spolja, jagoda - vanila punjenje iznutra.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-menu3">
+            <img src="assets/img/menu/21.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pApple">Jabuka - Cimet Poh. Palačinka</a>
+            </div>
+            <div class="menu-ingredients">
+              <span data-i18n="desc_pApple">Hrskava kora spolja, jabuka - cimet punjenje iznutra.</span><br />
+              <span class="food-type" data-i18n="vegetarian">VEGETERIJANSKO</span>
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dippots">
+            <img src="assets/img/menu/25.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="heinzSalsa">Heinz Salsa Ljuti</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 50
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dippots">
+            <img src="assets/img/menu/22.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="heinzCurry">Heinz Kari - Mango</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 50
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dippots">
+            <img src="assets/img/menu/24.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="heinzHoney">Heinz Med & Senf</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 50
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-dippots">
+            <img src="assets/img/menu/23.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="heinzSweet">Heinz Slatko - Kiseli</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 50
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/cc.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Coca Cola 0.33</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 80
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/ccw.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Coca Cola 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 100
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/27.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Coca Cola Zero 0.33</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 80
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/cczw.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Coca Cola Zero 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 100
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/28.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pFanta3">Fanta Narandža 0.33</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 80
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/fw.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="pFanta5">Fanta Narandža 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 100
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/31.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Sprite 0.33</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 80
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/sw.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Sprite 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 100
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/29.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Schweppes Bitter Lemon 0.33</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 80
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/30.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Schweppes Bitter Lemon Zero Sugar 0.33</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 80
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/32.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a>Ultra Energy 0.25</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 90
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/35.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="nextLemonade">Next Limunada 0.4</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 100
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/36.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="fuzeTea">Fuzetea Peach 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 100
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/34.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="water">Rosa Voda 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+              RSD 60
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-drinks">
+            <img src="assets/img/menu/33.jpg" class="menu-img" alt="">
+            <div class="menu-content">
+              <a data-i18n="sparklingWater">Rosa Gazirana Voda 0.5</a>
+            </div>
+            <div class="menu-ingredients">
+             RSD 60
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Menu Section -->
+
+    <!-- ======= deals Section ======= -->
+    <!-- <section id="deals" class="specials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-i18n="navDeals">Akcije</h2>
+          <p data-i18n="ourMonthlyDeals">Naše ovomesečne akcije</p>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-3">
+            <ul class="nav nav-tabs flex-column">
+              <li class="nav-item">
+                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Beer combo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Party combo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Chips</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-9 mt-4 mt-lg-0">
+            <div class="tab-content">
+              <div class="tab-pane active show" id="tab-1">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Architecto ut aperiam autem id</h3>
+                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-2">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Et blanditiis nemo veritatis excepturi</h3>
+                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
+                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-3">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
+                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
+                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-4">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
+                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
+                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab-5">
+                <div class="row">
+                  <div class="col-lg-8 details order-2 order-lg-1">
+                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
+                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
+                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
+                  </div>
+                  <div class="col-lg-4 text-center order-1 order-lg-2">
+                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>End Deals Section -->
+
+<!-- ======= Location Section ======= -->
+    <section id="location" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-i18n="navLocation">Lokacija</h2>
+          <p data-i18n="findUs">Pronađi Nas</p>
+        </div>
+      </div>
+
+      <div data-aos="fade-up">
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2902.7142275257884!2d21.899710976750967!3d43.32024137111986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b1005b7ced6d%3A0xe514ed6fa1fd886d!2sCrispies%20Food!5e0!3m2!1sen!2srs!4v1732052826415!5m2!1sen!2srs" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </section><!-- End Location Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2 data-i18n="navContact">Kontakt</h2>
+          <p data-i18n="contactUs">Kontaktiraj Nas</p>
+        </div>
+      </div>
+
+      <div class="container" data-aos="fade-up">
+
+        <div class="row mt-5">
+
+          <div class="col-lg-4">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4 data-i18n="navLocation">Lokacija:</h4>
+                <p>Vožda Karađorđa 74, Niš 18000, Srbija</p>
+              </div>
+
+              <div class="open-hours">
+                <i class="bi bi-clock"></i>
+                <h4 data-i18n="openHours">Radno Vreme:</h4>
+                <p>
+                  <span data-i18n="days">Ponedeljak - Subota:</span><br>
+                  08:00 - 23:30
+                </p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>info@crispiesfood.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4 data-i18n="call">Pozovi:</h4>
+                <p>+381 66 8106 962</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-8 mt-5 mt-lg-0">
+
+            <form action="mailto:info@crispiesfood.com" method="get" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Vaše ime" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Vaš email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Predmet" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="body" rows="8" placeholder="Poruka" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Učitavanje</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Vaša poruka je poslata. Hvala!</div>
+              </div>
+              <div class="text-center"><button type="submit">Pošaljite poruku</button></div>
+            </form>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="d-flex text-center justify-content-center">
+            <div class="footer-info">
+              <h3>CRISPIES</h3>
+              <p>
+              Vožda Karađorđa 74, Niš 18000, Srbija<br><br>
+                <strong><span data-i18n="phone">Broj telefona:</span></strong> +381 66 8106 962<br>
+                <strong>Email:</strong> info@crispiesfood.com<br>
+              </p>
+              <div class="social-links mt-3">
+                <a href="https://wa.me/381668106962" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+                <a href="https://maps.app.goo.gl/jy3iVRqxqgnuWSsU6" class="google"><i class="bx bxl-google"></i></a>
+<!--                <a href="https://www.instagram.com/crispiesfood/" class="google"><i class="bx bxl-"></i></a>-->
+<!--                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>-->
+                <a href="https://www.instagram.com/crispiesfood/" class="instagram"><i class="bx bxl-instagram"></i></a>
+              </div>
+            </div>
+          </div>
+
+<!--          <div class="col-lg-2 col-md-6 footer-links">-->
+<!--            <h4>Rate us!</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-3 col-md-6 footer-links">-->
+<!--            <h4>Our Services</h4>-->
+<!--            <ul>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>-->
+<!--              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>-->
+<!--            </ul>-->
+<!--          </div>-->
+
+<!--          <div class="col-lg-4 col-md-6 footer-newsletter">-->
+<!--            <h4>Our Newsletter</h4>-->
+<!--            <p>Stay informed about the best deals!</p>-->
+<!--            <form action="" method="post">-->
+<!--              <input type="email" name="email"><input type="submit" value="Subscribe">-->
+<!--            </form>-->
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>CRISPIES</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
   <a href="tel:+381601234567" class="call d-flex align-items-center justify-content-center"><i class="bi bi-telephone fs-5"></i></a>
@@ -89,11 +859,196 @@
     const translations = {
       en: {
         heroWelcome: "Welcome to <span>CRISPIES</span>",
-        heroUsp: "The website is under construction."
+        heroUsp: "The only fast food restaurant in Niš that offers an innovative menu where <span>you create your own meal</span> by choosing from a variety of options from the menu.",
+        heroMenuBtn: "Our Menu",
+        heroOrderBtn: "Grab & Go",
+        navHome: "Home",
+        navMenu: "Menu",
+        navDeals: "Deals",
+        navLocation: "Location",
+        navContact: "Contact",
+        menuKeyword: "Menu",
+        menuHeader: "Check Our Menu",
+        menuExplain: "Create your own BUCKET by choosing 1 or combining 2 items from MENU 1 and MENU 2.<br />Select sauces for each bucket. (ketchup, mayonnaise, mustard, burger sauce, chilli, tartare).",
+        menuStrHeadMenuType: "Menu Type",
+        menuStrHeadMenuM: "M Bucket",
+        menuStrHeadMenuL: "L Bucket",
+        menuStrMenu1: "Menu 1",
+        menuStrMenu2: "Menu 2",
+        menuStrPancakes: "Fried Pancakes",
+        menuStrMenu12: "Menu 1 & 2",
+        menuStrMenu13: "Menu 1 & 3",
+        menuStrMenu23: "Menu 2 & 3",
+        menuFilterAll: "All products",
+        menuFilterDippots: "Dip pots",
+        menuFilterDrinks: "Drinks",
+        ourMonthlyDeals: "Our Monthly Deals",
+        contactUs: "Contact Us",
+        findUs: "Find Us",
+        about: "About Us",
+        contact: "Contact",
+        description: "This is a description of the service.",
+        crinkleFries: "Crispies Fries",
+        chips: "Old-School Chips",
+        wedges: "Wild West Wedges",
+        spicyWedges: "Spicy Wedges",
+        goldenBubbles: "Golden Bubbles",
+        hashBrowns: "Hash Browns",
+        onionRings: "Onion Rings",
+        squidRings: "Squid Rings",
+        chickenNuggets: "Chicken Nuggets",
+        scStrips: "Sweet & Chilli Chicken Strips",
+        cornflakeStrips: "Cornflake Chicken Strips",
+        ccBombs: "Chick ‘n Cheese Bombs",
+        cheese: "Crispies Cheese",
+        brocolli: "Crispies Broccoli",
+        mushrooms: "Crispies Mushrooms",
+        pCheese: "Fried Pancake with Cheese",
+        pCheeseHam: "Fried Pancake with Cheese and Ham",
+        pPizza: "Pizza Fried Pancake",
+        pChoco: "Choco Fried Pancake",
+        pStrawberry: "Strawberry-Vanilla Fried Pancake",
+        pApple: "Apple-Cinnamon Fried Pancake",
+        desc_crinkleFries: "Wavy fries with a perfect balance of crispness and fluff.",
+        desc_chips: "Traditionally made with age-old methods from natural potatoes.",
+        desc_wedges: "Crunchy potato wedges seasoned with herb batter.",
+        desc_spicyWedges: "Potato wedges with a blend of spices and the ideal kick of heat.",
+        desc_goldenBubbles: "Simple, clean potato flavor in a soft, airy bubble.",
+        desc_hashBrowns: "Grated potatoes fried until golden brown.",
+        desc_onionRings: "Crispy golden onion rings, lightly battered and fried to perfection.",
+        desc_squidRings: "Crispy golden squids, lightly battered and fried to perfection.",
+        desc_chickenNuggets: "Juicy, all-white chicken breast, crafted into nuggets.",
+        desc_scStrips: "Chicken strips with a sweet and spicy kick.",
+        desc_cornflakeStrips: "Chicken strips with a crunchy cornflake crust.",
+        desc_ccBombs: "Tender chicken breast balls filled with melty, gooey cheese inside.",
+        desc_cheese: "Soft, melty cheese wrapped in a crispy, golden nugget.",
+        desc_brocolli: "Broccoli in a new way - crispy, savory and tasty.",
+        desc_mushrooms: "Real mushrooms turned into crispy bites.",
+        desc_pCheese: "Crispy batter outisde, gooey cheese filling inside.",
+        desc_pCheeseHam: "Crispy batter outisde, gooey cheese and savory ham inside.",
+        desc_pPizza: "Crispy batter outisde, delicious pizza filling inside.",
+        desc_pChoco: "Crispy batter outisde, sweet chocolate filling inside.",
+        desc_pStrawberry: "Crispy batter outisde, fresh strawberry - vanilla filling inside.",
+        desc_pApple: "Crispy batter outisde, apple - cinnamon spice filling inside.",
+        heinzSalsa: "Heinz Salsa Hot",
+        heinzCurry: "Heinz Curry - Mango",
+        heinzHoney: "Heinz Honey & Mustard",
+        heinzSweet: "Heinz Sweet & Sour",
+        pFanta3: "Fanta Orange 0.33",
+        pFanta5: "Fanta Orange 0.5",
+        nextLemonade: "Next Lemonade 0.4",
+        fuzeTea: "Fuzetea Peach 0.5",
+        water: "Rosa Water 0.5",
+        sparklingWater: "Rosa Sparkling Water 0.5",
+        vL: "VEGAN, LENTEN",
+        vegetarian: "VEGETARIAN",
+        openHours: "Open Hours:",
+        call: "Call:",
+        phone: "Phone:",
+        name: "Your Name",
+        email: "Your Email",
+        subject: "Subject",
+        body: "Message",
+        loading: "Loading",
+        sentMessage: "Your message has been sent. Thank you!",
+        submitButton: "Send Message",
+        days: "Monday - Saturday:"
       },
       rs: {
         heroWelcome: "Dobrodošli u <span>CRISPIES</span>",
-        heroUsp: "Sajt je u izradi."
+        heroUsp: "Jedini restoran brze hrane u Nišu koji nudi inovativan meni gde <span>sami kreirate svoj obrok</span> birajući raznovrsne opcije sa menija.",
+        heroMenuBtn: "Naš Meni",
+        heroOrderBtn: "Naruči & Pokupi",
+        navHome: "Početna",
+        navMenu: "Meni",
+        navDeals: "Akcije",
+        navLocation: "Lokacija",
+        navContact: "Kontakt",
+        menuHeader: "Meni",
+        menuExplain: "Napravite svoju KOFICU tako što ćete izabrati 1 ili kombinovati 2 proizvoda iz MENIJA 1 i MENIJA 2.<br />Izaberite soseve uz svaku koficu. (kečap, majonez, senf, burger, čili, tartar)",
+        menuStrHeadMenuType: "Tip Menija",
+        menuStrHeadMenuM: "M Kofica",
+        menuStrHeadMenuL: "L Kofica",
+        menuStrMenu1: "Meni 1",
+        menuStrMenu2: "Meni 2",
+        menuStrPancakes: "Poh. Palačinke",
+        menuStrMenu12: "Meni 1 & 2",
+        menuStrMenu13: "Meni 1 & 3",
+        menuStrMenu23: "Meni 2 & 3",
+        menuFilterAll: "Svi proizvodi",
+        menuFilterDippots: "Sosevi",
+        menuFilterDrinks: "Pića",
+        ourMonthlyDeals: "Naše ovomesečne akcije",
+        contactUs: "Kontaktiraj Nas",
+        findUs: "Pronađi Nas",
+        about: "À propos de nous",
+        contact: "Contact",
+        description: "Ceci est une description du service.",
+        crinkleFries: "Crispies Pomfrit",
+        chips: "Old-School Cips",
+        wedges: "Začinjene Kriške Krompira",
+        spicyWedges: "Ljuto Začinjene Kriške Krompira",
+        goldenBubbles: "Krompir Kuglice",
+        hashBrowns: "Krompir Pljeskavice",
+        onionRings: "Kolutići Luka",
+        squidRings: "Kolutići Lignje",
+        chickenNuggets: "Pileći Nuggetsi",
+        scStrips: "Slatko - Ljuti Pileći Prstići",
+        cornflakeStrips: "Kornfleks Pileći Prstići",
+        ccBombs: "Pileće Kuglice sa Sirom",
+        cheese: "Crispies Sir",
+        brocolli: "Crispies Brokoli",
+        mushrooms: "Crispies Pečurke",
+        pCheese: "Poh. Palačinka sa Sirom",
+        pCheeseHam: "Poh. Palačinka sa Sirom i Šunkom",
+        pPizza: "Pizza Poh. Palačinka",
+        pChoco: "Čoko Poh. Palačinka",
+        pStrawberry: "Jagoda - Vanila Poh. Palačinka",
+        pApple: "Jabuka - Cimet Poh. Palačinka",
+        desc_crinkleFries: "Rebrasti pomfrit sa savršenom ravnotežom hrskavosti i mekanosti.",
+        desc_chips: "Tradicionalni krompir po starim metodama od prirodnog krompira.",
+        desc_wedges: "Hrskave kriške krompira sa korom od začinskog bilja.",
+        desc_spicyWedges: "Kriške krompira sa smelom mešavinom začina i dozom ljutine.",
+        desc_goldenBubbles: "Jednostavan, čist ukus krompira u mekom, prozračnom mehuriću.",
+        desc_hashBrowns: "Rendani krompir pržen do savršene, zlatne boje.",
+        desc_onionRings: "Hrskavi zlatni kolutići luka, lagani i prženi do savršenstva.",
+        desc_squidRings: "Lignja pripremljena da pruži hrskavu teksturu i ukus.",
+        desc_chickenNuggets: "Sočna pileća prsa pretvorena u zlatne zalogaje.",
+        desc_scStrips: "Pileći prstići sa slatkim i začinjenim tonovima ukusa.",
+        desc_cornflakeStrips: "Pileći prstići sa hrskavom, začinjenom kornfleks korom.",
+        desc_ccBombs: "Mekane pileće kuglice punjene topljenim sirom.",
+        desc_cheese: "Meki, topljeni sir umotan u zlatnu, hrskavu koru.",
+        desc_brocolli: "Brokoli na nov način - hrskav, pikantan i ukusan.",
+        desc_mushrooms: "Prave pečurke pretvorene u hrskave zalogaje.",
+        desc_pCheese: "Hrskava kora spolja, topljeni sir iznutra.",
+        desc_pCheeseHam: "Hrskava kora spolja, topljeni sir i šunka iznutra.",
+        desc_pPizza: "Hrskava kora spolja, pizza punjenje iznutra.",
+        desc_pChoco: "Hrskava kora spolja, čokoladno punjenje iznutra.",
+        desc_pStrawberry: "Hrskava kora spolja, jagoda - vanila punjenje iznutra.",
+        desc_pApple: "Hrskava kora spolja, jabuka - cimet punjenje iznutra.",
+        heinzSalsa: "Heinz Salsa Ljuti",
+        heinzCurry: "Heinz Kari - Mango",
+        heinzHoney: "Heinz Med & Senf",
+        heinzSweet: "Heinz Slatko & Kiseli",
+        pFanta3: "Fanta Narandža 0.33",
+        pFanta5: "Fanta Narandža 0.5",
+        nextLemonade: "Next Limunada 0.4",
+        fuzeTea: "Fuzetea Breskva 0.5",
+        water: "Rosa Voda 0.5",
+        sparklingWater: "Rosa Gazirana Voda 0.5",
+        vL: "VEGANSKO, POSNO",
+        vegetarian: "VEGETERIJANSKO",
+        openHours: "Radno Vreme:",
+        call: "Pozovi:",
+        phone: "Broj telefona:",
+        name: "Vaše ime",
+        email: "Vaš email",
+        subject: "Predmet",
+        body: "Poruka",
+        loading: "Učitavanje",
+        sentMessage: "Vaša poruka je poslata. Hvala!",
+        submitButton: "Pošaljite poruku",
+        days: "Ponedeljak - Subota:"
       }
     };
 
@@ -108,6 +1063,16 @@
         const key = el.getAttribute('data-i18n');
         el.innerHTML = translation[key];
       });
+
+
+      document.getElementById("name").setAttribute("placeholder", translation.name);
+      document.getElementById("email").setAttribute("placeholder", translation.email);
+      document.getElementById("subject").setAttribute("placeholder", translation.subject);
+      document.querySelector("textarea[name='body']").setAttribute("placeholder", translation.body);
+
+      document.querySelector(".loading").innerHTML = translation.loading;
+      document.querySelector(".sent-message").innerHTML = translation.sentMessage;
+      document.querySelector("button[type='submit']").innerHTML = translation.submitButton;
     }
 
     function highlightActiveLanguage(lang) {
